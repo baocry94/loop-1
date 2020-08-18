@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let display = 0;
+    for ( let count = 0;count < 10;count++){
+        display += a + b;
+        a += b;
+        b += a;
+    }
+    document.write("Tổng 20 số đầu tiên trong dãy fibonacci là : " + display);
+</script>
+</body>
+</html>
