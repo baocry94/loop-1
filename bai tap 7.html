@@ -7,15 +7,15 @@
 <body>
 <script>
     let total = "";
-    for (let count = 1; count <= 100; count++){
-        if (count%3 !== 0 && count%5 !==0){
+    for (let count = 1; count <= 100; count++) {
+        if (count % 3 !== 0 && count % 5 !== 0) {
             total += count + " " + "<br>";
-        }else if (count%3 === 0 && count%5 !==0){
-            total += " Fizz " + "<br>";
-        }else if (count%3 !== 0 && count%5 ===0){
-            total += " Buzz " + "<br>";
-        }else {
-            total += " FizzBuzz " + "<br>";
+        } else if (count % 5) {
+            total += "Buzz  " + "<br>";
+        } else if (count % 3) {
+            total += "Fizz" + "<br>";
+        } else {
+            total += "FizzBuzz" + "<br>";
         }
     }
     document.write(total);
