@@ -9,13 +9,13 @@
     let total = "";
     for (let count = 1; count <= 100; count++){
         if (count%3 !== 0 && count%5 !==0){
-            total += count + " ";
+            total += count + " " + "<br>";
         }else if (count%3 === 0 && count%5 !==0){
-            total += " Fizz ";
+            total += " Fizz " + "<br>";
         }else if (count%3 !== 0 && count%5 ===0){
-            total += " Buzz ";
+            total += " Buzz " + "<br>";
         }else {
-            total += " FizzBuzz ";
+            total += " FizzBuzz " + "<br>";
         }
     }
     document.write(total);
