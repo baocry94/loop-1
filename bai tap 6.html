@@ -12,13 +12,14 @@
     while (count < 30){
         if (num%7 === 0){
             total += num;
+            document.write(num + "<br>")
             count++;
             num++;
         }else {
             num++;
         }
     }
-    document.write(total);
+    document.write("Tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên là : " + total);
 </script>
 </body>
 </html>
